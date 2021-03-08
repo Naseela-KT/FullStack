@@ -1,5 +1,5 @@
 <html>
-<head><h1>Fist PHP</h1></head>
+<head><h1>First PHP</h1></head>
 <body>
 <?php 
 print "hello"
