@@ -10,8 +10,6 @@ if ($conn->connect_error) {
 }
 $sql = "INSERT INTO AiclTable (firstname, lastname, email, contact)
 VALUES ('Naseela', 'K T', 'abc@gmail.com', 9876543210)";
-$sql .= "INSERT INTO AiclTable (firstname, lastname, email, contact)
-VALUES ('Shilpa', 'A N', 'mnhj@gmail.com', 9879876540)";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
