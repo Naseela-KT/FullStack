@@ -13,11 +13,11 @@
  }
 
  $sql = "INSERT INTO AiclTable(fisrtname,lastname,email,contact)
-         VALUES('Naseela', 'K T', 'abcd@gmail.com',9876543210)";
- $sql = "INSERT INTO FullTable(fisrtname,lastname,email,contact)
-         VALUES('Irfana', 'K V', 'efgh@gmail.com',9898767609)";
- $sql = "INSERT INTO FullTable(fisrtname,lastname,email,contact)
-         VALUES('Fathima', 'Dilsha', 'ijk@gmail.com',9876543210)";
+ VALUES('Shilpa', 'A N', 'nmjl@gmail.com', 9678905432)";
+ $sql = "INSERT INTO AiclTable(fisrtname,lastname,email,contact)
+ VALUES('Irfana', 'K V', 'efgh@gmail.com', 9898767609)";
+ $sql = "INSERT INTO AiclTable(fisrtname,lastname,email,contact)
+ VALUES('Fathima', 'Dilsha', 'ijk@gmail.com', 9876543210)";
  
  if ($conn->multi_query($sql) === TRUE) {
      echo "New records created successfully";
