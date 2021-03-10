@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "aiclDB";
+$dbname = "AiclDB";
 
 // Create connection with database
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "connected to database!";
+echo "connected";
 
 // sql to create table
 $sql = "CREATE TABLE AiclTable (
