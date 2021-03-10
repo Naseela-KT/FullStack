@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 $sql = "INSERT INTO AiclTable (firstname, lastname, email, contact)
 VALUES ('Shilpa', 'A N', 'mnhj@gmail.com', 9879876540)";
-$sql .= "INSERT INTO AiclTable (firstname, lastname, email, contact)
+$sql = "INSERT INTO AiclTable (firstname, lastname, email, contact)
 VALUES ('Irfana', 'K V', 'bhgt@gmail.com', 9789786780)";
 
 
