@@ -15,6 +15,7 @@
     border: 1px solid black;
   }
   button.btn.btn-primary {
+    color: slateblue;
     text-align: center;
   }
   a:link,a:visited{
