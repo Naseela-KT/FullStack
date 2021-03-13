@@ -5,8 +5,9 @@
     margin: 20px;
   }
   input[type="text"],
-  input[type="number"],
-  input[type="email"] {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
     border: 1px solid black;
   }
   textarea.form-control {

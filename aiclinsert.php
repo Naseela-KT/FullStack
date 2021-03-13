@@ -5,6 +5,8 @@ $password = "";
 $dbname = "AICLform_DB";
 // get the post records
 $firstName = $_POST['firstName'];
+$lastname = $_POST['lastname'];
+$email = $_POST['email'];
 $contact=$_POST['Contact'];
 $messagetxt=$_POST['Message'];
 // Create connection
@@ -14,8 +16,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 //inserting data into table created from the form
-$sql = "INSERT INTO AICLform_Table (firstname, contact, messagetext)
-VALUES ('$firstName','$contact','$messagetxt')";
+$sql = "INSERT INTO AICLformTable (firstname, lastname, email, contact, messagetext)
+VALUES ('$firstName','$lastname','$email','$contact','$messagetxt')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record inserted successfully";

@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE AICLform_Table(
+$sql = "CREATE TABLE AICLformTable(
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
 email VARCHAR(30) NOT NULL,

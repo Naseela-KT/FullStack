@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $contact=$_GET['Contact'];
-$sql = "SELECT firstname,contact, messagetext FROM AICLform_Table WHERE contact='$contact'";
+$sql = "SELECT firstname,lastname,email,contact, messagetext FROM AICLformTable WHERE contact='$contact'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -20,6 +20,8 @@ if ($result->num_rows > 0) {
    echo "<table border='1'>";
    echo"<tr><th>Firstname</th><th>Contact</th><th>Message</th></tr>";
    echo "<tr><td>" . $row['firstname'] . "</td>";
+   echo "<tr><td>" . $row['lastname'] . "</td>";
+   echo "<tr><td>" . $row['email'] . "</td>";
    echo "<td>" . $row['contact'] . "</td>";
    echo "<td>" . $row['messagetext'] . "</td></tr>";
    echo "</table>"; 
