@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "AICLform_DB";
 // get the post records
-$firstName = $_POST['firstName'];
+$firstName = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 $contact=$_POST['Contact'];
