@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $contact=$_GET['Contact'];
-$sql = "SELECT firstname,lastname,email,contact, messagetext FROM AICLformTable WHERE contact='$contact'";
+$sql = "SELECT firstname,lastname,email,contact,messagetext FROM AICLformTable WHERE contact='$contact'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
