@@ -20,6 +20,6 @@
   a:link,a:visited{
     color: maroon;
   }
-  a:hover{
+  a:link,a:hover{
     color: mediumvioletred;
   }
