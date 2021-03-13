@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// sql to create table
+// sql to create table 
 $sql = "CREATE TABLE AICLformTable(
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
